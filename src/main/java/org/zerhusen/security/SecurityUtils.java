@@ -24,7 +24,7 @@ public class SecurityUtils {
       final Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
       if (authentication == null) {
-         LOG.debug("no authentication in security context found");
+         LOG.debug("no authentication in security context.");
          return Optional.empty();
       }
 
