@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class AdminProtectedRestController {
 
-   @GetMapping("/hiddenmessage")
+   @GetMapping("/hiddenmessages")
    public ResponseEntity<HiddenMessage> getAdminProtectedGreeting() {
       return ResponseEntity.ok(new HiddenMessage("this is a hidden message!"));
    }
